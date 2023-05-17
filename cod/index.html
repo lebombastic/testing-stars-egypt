@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <title>Saint Andrew&#39;s Refugee Services</title><!-- HEAD_svelte-zpwwhd_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="http://web.archive.org/web/20200601010519im_/http://stars-egypt.org/wp-content/themes/organic_nonprofit/images/favicon.ico" type="image/x-icon">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        html {
+
+            /* Colors */
+            --color-accent: red;
+            --color-dark: #3E3D43;
+            --color-light: #FCFCFD;
+            --color-shade: #CBCACE;
+            --color-white: #FFF;
+
+            /* Default property values */
+            --background: var(--color-shade);
+            --color: var(--color-dark);
+            --padding: 2rem;
+            --border: 1px solid var(--color-shade);
+            --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 8px;
+            --max-width: 1200px;
+            --border-color: var(--color-shade);
+            --transition-time: 0.1s;
+            --transition: var(--transition-time) color,
+                var(--transition-time) background-color,
+                var(--transition-time) border-color,
+                var(--transition-time) text-decoration-color,
+                var(--transition-time) box-shadow, var(--transtion-time) transform;
+
+            /* Elements */
+            --heading-color: #252428;
+            --heading-font-size: 39px;
+            --heading-line-height: 48px;
+            --heading-font-weight: 700;
+
+            --subheading-color: #3E3D43;
+            --subheading-font-size: 1.5rem;
+
+            --button-color: white;
+            --button-background: var(--color-accent);
+            --button-border-radius: 4px;
+            --button-padding: 8px 20px;
+
+        }
+
+        .primo-page {
+            font-family: system-ui, sans-serif;
+            color: var(--color);
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .primo-section .primo-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--padding);
+            background: var(--color-white);
+        }
+
+        .primo-section .primo-content>* {
+            max-width: 700px;
+        }
+
+        .primo-section .primo-content img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .primo-section .primo-content p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+
+        .primo-section .primo-content a {
+            text-decoration: underline;
+        }
+
+        .primo-section .primo-content h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .primo-section .primo-content h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .primo-section .primo-content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .primo-section .primo-content ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .page-container {
+            max-width: var(--max-width, 1200px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .body {
+            font-size: var(--body-font-size);
+        }
+
+        .heading {
+            font-size: var(--heading-font-size, 49px);
+            line-height: var(--heading-line-height, 1);
+            font-weight: var(--heading-font-weight, 700);
+            color: var(--heading-color, #252428);
+        }
+
+        .button {
+            color: var(--color-white, white);
+            background: var(--color-accent, #154BF4);
+            border: 2px solid transparent;
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: var(--color-white);
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+    </style><!-- HEAD_svelte-zpwwhd_END -->
+    <style>
+        section.svelte-2398mr.svelte-2398mr {
+            display: flex;
+            justify-content: space-between;
+            background: var(--color-white);
+            margin-top: 1rem;
+            border-radius: 8px 8px 0px 0px;
+            padding: 2rem 2rem 0rem 1rem
+        }
+
+        .dropdown.svelte-2398mr.svelte-2398mr {
+            position: relative
+        }
+
+        li.svelte-2398mr.svelte-2398mr {
+            font-size: 0.75rem
+        }
+
+        img.svelte-2398mr.svelte-2398mr {
+            width: 55%
+        }
+
+        .items.svelte-2398mr.svelte-2398mr {
+            place-self: center;
+            font-size: 1rem;
+            position: relative;
+            display: flex
+        }
+
+        a.nav.svelte-2398mr.svelte-2398mr {
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.1s;
+            margin-right: 2rem
+        }
+
+        a.nav.svelte-2398mr.svelte-2398mr:hover {
+            border-color: var(--color-accent, #154BF4)
+        }
+
+        .fb.svelte-2398mr.svelte-2398mr {
+            border: 2px solid var(--color-accent);
+            padding: 0rem 0.3rem
+        }
+
+        .fb.svelte-2398mr.svelte-2398mr:hover {
+            background-color: blue;
+            color: white
+        }
+
+        .dropdown.svelte-2398mr .dropdown-menu.svelte-2398mr {
+            display: none;
+            position: absolute;
+            width: 12rem;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+        }
+
+        .dropdown.svelte-2398mr .dropdown-menu a.svelte-2398mr:hover {
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.1s;
+            border-color: var(--color-accent, #154BF4)
+        }
+
+        .dropdown.svelte-2398mr:hover .dropdown-menu.svelte-2398mr {
+            display: block;
+            z-index: 2;
+            background: #CBCACE;
+            border-radius: 8px
+        }
+
+        .nav.svelte-2398mr.svelte-2398mr {
+            font-size: 1em;
+            align-self: center
+        }
+
+        .dropdown.svelte-2398mr a.svelte-2398mr {
+            display: block;
+            padding: 0.2em 0.8em;
+            text-decoration: none;
+            color: #333333
+        }
+
+        aside.svelte-15xaj3j.svelte-15xaj3j {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            background: var(--color-white);
+            padding: 2rem 2rem 3rem 2rem
+        }
+
+        .testimonial.svelte-15xaj3j.svelte-15xaj3j {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem
+        }
+
+        .testimonial.svelte-15xaj3j .card.svelte-15xaj3j {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            border-radius: 10px;
+            margin: 0 auto
+        }
+
+        .testimonial.svelte-15xaj3j img.svelte-15xaj3j {
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.04));
+            border-radius: 10px
+        }
+
+        .testimonial.svelte-15xaj3j .controls.svelte-15xaj3j {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .testimonial.svelte-15xaj3j .controls button svg.svelte-15xaj3j {
+            width: 1.5rem;
+            height: 1.5rem
+        }
+
+        .testimonial.svelte-15xaj3j .controls button:first-child svg.svelte-15xaj3j {
+            transform: rotate(180deg)
+        }
+
+        .testimonial.svelte-15xaj3j .controls button[disabled].svelte-15xaj3j {
+            opacity: 0.25
+        }
+
+        @media(min-width: 700px) {
+            aside.svelte-15xaj3j.svelte-15xaj3j {
+                gap: 2.5rem
+            }
+
+            .testimonial.svelte-15xaj3j.svelte-15xaj3j {
+                position: relative;
+                align-items: center
+            }
+
+            .testimonial.svelte-15xaj3j .controls.svelte-15xaj3j {
+                position: absolute;
+                width: 100vw;
+                max-width: calc(var(--max-width) + 4rem);
+                top: calc(50% - 0.75rem)
+            }
+
+            button.svelte-15xaj3j.svelte-15xaj3j:nth-child(1) {
+                position: relative;
+                left: 10%
+            }
+
+            button.svelte-15xaj3j.svelte-15xaj3j:nth-child(2) {
+                position: relative;
+                right: 10%
+            }
+        }
+
+        section.svelte-1xfk3p6 {
+            display: grid;
+            gap: 1rem;
+            background: var(--color-white)
+        }
+
+        .content.svelte-1xfk3p6 {
+            display: grid;
+            gap: 0.3rem;
+            padding: 0 1.5rem
+        }
+
+        h1.svelte-1xfk3p6 {
+            font-size: var(--heading-font-size)
+        }
+
+        .subhed.svelte-1xfk3p6 {
+            font-size: 1.5rem;
+            font-weight: 500
+        }
+
+        p.svelte-1xfk3p6 {
+            padding-bottom: 1rem;
+            max-width: 80%;
+            text-align: justify
+        }
+
+        li.svelte-1xfk3p6 {
+            max-width: 80%;
+            text-align: justify;
+            line-height: 1.45
+        }
+
+        ul.svelte-1xfk3p6 {
+            list-style: disc inside none;
+            padding: 0 2rem
+        }
+
+        @media(max-width: 900px) {
+            p.svelte-1xfk3p6 {
+                max-width: 80vh
+            }
+        }
+
+        footer.svelte-yvf7nk {
+            background: var(--color-dark);
+            text-align: center;
+            font-size: var(--subheading-font-size);
+            color: #fff;
+            padding: 1rem;
+            border-radius: 11px
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-495902ef-07c0-426d-ac3e-2375b8bb7750">
+        <div class="component">
+            <section class="page-container svelte-2398mr"><a href="/">
+                    <img src="https://i.imgur.com/XbRkfNe.png" class="svelte-2398mr"></a>
+                <div class="items svelte-2398mr">
+                    <div class="dropdown svelte-2398mr"><a href="/" class="nav svelte-2398mr">Services</a>
+                        <ul class="dropdown-menu svelte-2398mr">
+                            <li class="svelte-2398mr"><a href="/rlap" class="svelte-2398mr">Refugee Legal Aid Program</a></li>
+                            <li class="svelte-2398mr"><a href="/ucyd" class="svelte-2398mr">Unaccompanied Children and Youth Department</a></li>
+                            <li class="svelte-2398mr"><a href="/cod" class="svelte-2398mr">Community Outreach Services</a></li>
+                            <li class="svelte-2398mr"><a href="/ps" class="svelte-2398mr">Psychosocial Services Services</a></li>
+                            <li class="svelte-2398mr"><a href="/education" class="svelte-2398mr">Education Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="items svelte-2398mr"><a href="/contact" class="nav svelte-2398mr">Contact</a><a href="/donate" class="nav svelte-2398mr">Donate</a><a href="/get-involved" class="nav svelte-2398mr">Get-Involved</a>
+                        <a href="https://www.facebook.com/standrewsrefugeeservices" class="fb svelte-2398mr">Facebook</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="section" id="section-08070fb1-05db-4e81-b67e-10cfcf8d5f56">
+        <div class="component">
+            <aside class="page-container svelte-15xaj3j">
+                <div class="testimonial svelte-15xaj3j">
+                    <div class="card svelte-15xaj3j"><img src="https://i.imgur.com/kYmZoqk.jpg" class="svelte-15xaj3j"></div>
+                    <div class="controls svelte-15xaj3j"><button disabled aria-label="Show previous item" class="svelte-15xaj3j"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svelte-15xaj3j">
+                                <path d="M0.375 12C0.375 18.4219 5.57812 23.625 12 23.625C18.4219 23.625 23.625 18.4219 23.625 12C23.625 5.57812 18.4219 0.375 12 0.375C5.57812 0.375 0.375 5.57812 0.375 12ZM12 1.875C17.5641 1.875 22.125 6.37969 22.125 12C22.125 17.5641 17.6203 22.125 12 22.125C6.43594 22.125 1.875 17.6203 1.875 12C1.875 6.43594 6.37969 1.875 12 1.875ZM16.0594 12.3984L10.6641 17.7891C10.4438 18.0094 10.0875 18.0094 9.86719 17.7891L9.53437 17.4562C9.31406 17.2359 9.31406 16.8797 9.53437 16.6594L14.2031 12L9.53906 7.33594C9.31875 7.11562 9.31875 6.75938 9.53906 6.53906L9.87188 6.20625C10.0922 5.98594 10.4484 5.98594 10.6688 6.20625L16.0641 11.5969C16.2797 11.8219 16.2797 12.1781 16.0594 12.3984Z" fill="#252428"></path>
+                            </svg></button>
+                        <button aria-label="Show next item" class="svelte-15xaj3j"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svelte-15xaj3j">
+                                <path d="M0.375 12C0.375 18.4219 5.57812 23.625 12 23.625C18.4219 23.625 23.625 18.4219 23.625 12C23.625 5.57812 18.4219 0.375 12 0.375C5.57812 0.375 0.375 5.57812 0.375 12ZM12 1.875C17.5641 1.875 22.125 6.37969 22.125 12C22.125 17.5641 17.6203 22.125 12 22.125C6.43594 22.125 1.875 17.6203 1.875 12C1.875 6.43594 6.37969 1.875 12 1.875ZM16.0594 12.3984L10.6641 17.7891C10.4438 18.0094 10.0875 18.0094 9.86719 17.7891L9.53437 17.4562C9.31406 17.2359 9.31406 16.8797 9.53437 16.6594L14.2031 12L9.53906 7.33594C9.31875 7.11562 9.31875 6.75938 9.53906 6.53906L9.87188 6.20625C10.0922 5.98594 10.4484 5.98594 10.6688 6.20625L16.0641 11.5969C16.2797 11.8219 16.2797 12.1781 16.0594 12.3984Z" fill="#252428"></path>
+                            </svg></button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="section" id="section-e7e4ab9a-f7ef-4653-80a0-05246afbcde4">
+        <div class="component">
+            <section class="page-container svelte-1xfk3p6">
+                <div class="content svelte-1xfk3p6">
+                    <h1 class="svelte-1xfk3p6">Community Outreach Services</h1>
+
+
+                    <div class="text">
+                        <p class="svelte-1xfk3p6">The Community Outreach Department maintains contact with both individual community members and refugee community based organizations (CBOs) in Egypt to enhance services. Through the work of the department’s programs, StARS collects data on CBOs and assesses the needs and capacities of individual CBOs to help them provide efficient and impactful support within their communities. </p>
+                        <ul class="svelte-1xfk3p6">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="section" id="section-6c767735-d1de-43a5-b80d-ff3318682c32">
+        <div class="component">
+            <footer class="page-container svelte-yvf7nk">
+                <p>Copyright © 2022 · All Rights Reserved · St. Andrew&#39;s Refugee Services</p>
+            </footer>
+        </div>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
