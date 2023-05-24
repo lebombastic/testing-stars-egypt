@@ -3,7 +3,7 @@
 
 <head>
     <meta name="generator" content="Primo" />
-    <title>Saint Andrew&#39;s Refugee Services</title><!-- HEAD_svelte-15ajgmk_START -->
+    <title>Saint Andrew&#39;s Refugee Services</title><!-- HEAD_svelte-1w20nxe_START -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Shortcut Icon" href="http://web.archive.org/web/20200601010519im_/http://stars-egypt.org/wp-content/themes/organic_nonprofit/images/favicon.ico" type="image/x-icon">
     <link rel="Shortcut Icon" href="http://web.archive.org/web/20200601010519im_/http://stars-egypt.org/wp-content/themes/organic_nonprofit/images/favicon.ico" type="image/x-icon">
@@ -50,7 +50,8 @@
   --button-padding: 8px 20px; */
 
             --color-accent: red;
-            --color-dark: #3E3D43;
+            --color-dark: #000000;
+            --color-dark-accent: #282A3A;
             --color-light: #FCFCFD;
             --color-shade: #282A3A;
             --color-white: #000000;
@@ -75,6 +76,11 @@
             --button-border-radius: 4px;
             --button-padding: 8px 20px;
 
+        }
+
+        .dark-mode {
+            background: var(--color-dark);
+            color: var(--color-dark-accent);
         }
 
         .primo-page {
@@ -190,7 +196,7 @@
             --color-light: #FCFCFD;
             --color-shade: #CBCACE;
             --color-white: #FFF;
-            --background: var(--color-shade);
+            --background: black;
             --color: var(--color-dark);
             --padding: 2rem;
             --border: 1px solid var(--color-shade);
@@ -211,9 +217,9 @@
             --button-border-radius: 4px;
             --button-padding: 8px 20px;
         }
-    </style><!-- HEAD_svelte-15ajgmk_END -->
+    </style><!-- HEAD_svelte-1w20nxe_END -->
     <style>
-        section.svelte-2398mr.svelte-2398mr {
+        section.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             display: flex;
             justify-content: space-between;
             background: var(--color-white);
@@ -222,75 +228,289 @@
             padding: 2rem 2rem 0rem 1rem
         }
 
-        .dropdown.svelte-2398mr.svelte-2398mr {
+        .dark-mode.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+            background: #000000;
+            color: #C69749
+        }
+
+        .dark-mode.svelte-124iln0 img.svelte-124iln0.svelte-124iln0 {
+            content: url("https://i.imgur.com/xbVs6gP.png")
+        }
+
+        .items-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 800px) {
+            .items-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+                display: none
+            }
+        }
+
+        .switch.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px
+        }
+
+        .switch.svelte-124iln0 input.svelte-124iln0.svelte-124iln0 {
+            opacity: 0;
+            width: 0;
+            height: 0
+        }
+
+        .slider.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 34px;
+            transition: background-color 0.4s
+        }
+
+        .slider.svelte-124iln0.svelte-124iln0.svelte-124iln0:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.4s
+        }
+
+        input.svelte-124iln0:checked+.slider.svelte-124iln0.svelte-124iln0 {
+            background-color: #2196f3
+        }
+
+        input.svelte-124iln0:checked+.slider.svelte-124iln0.svelte-124iln0:before {
+            transform: translateX(26px)
+        }
+
+        .dropdown.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             position: relative
         }
 
-        li.svelte-2398mr.svelte-2398mr {
+        li.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             font-size: 0.75rem
         }
 
-        img.svelte-2398mr.svelte-2398mr {
+        img.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             width: 55%
         }
 
-        .items.svelte-2398mr.svelte-2398mr {
+        .items.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             place-self: center;
             font-size: 1rem;
             position: relative;
             display: flex
         }
 
-        a.nav.svelte-2398mr.svelte-2398mr {
+        @media(max-width: 800px) {
+            .items.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+                display: none
+            }
+        }
+
+        a.nav.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             border-bottom: 2px solid transparent;
             transition: border-color 0.1s;
             margin-right: 2rem
         }
 
-        a.nav.svelte-2398mr.svelte-2398mr:hover {
+        a.nav.svelte-124iln0.svelte-124iln0.svelte-124iln0:hover {
             border-color: var(--color-accent, #154BF4)
         }
 
-        .fb.svelte-2398mr.svelte-2398mr {
+        .fb.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             border: 2px solid var(--color-accent);
             padding: 0rem 0.3rem
         }
 
-        .fb.svelte-2398mr.svelte-2398mr:hover {
+        .fb.svelte-124iln0.svelte-124iln0.svelte-124iln0:hover {
             background-color: blue;
             color: white
         }
 
-        .dropdown.svelte-2398mr .dropdown-menu.svelte-2398mr {
+        .dropdown.svelte-124iln0 .dropdown-menu.svelte-124iln0.svelte-124iln0 {
             display: none;
             position: absolute;
             width: 12rem;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
         }
 
-        .dropdown.svelte-2398mr .dropdown-menu a.svelte-2398mr:hover {
+        .dropdown.svelte-124iln0 .dropdown-menu a.svelte-124iln0.svelte-124iln0:hover {
             border-bottom: 2px solid transparent;
             transition: border-color 0.1s;
             border-color: var(--color-accent, #154BF4)
         }
 
-        .dropdown.svelte-2398mr:hover .dropdown-menu.svelte-2398mr {
+        .dropdown.svelte-124iln0:hover .dropdown-menu.svelte-124iln0.svelte-124iln0 {
             display: block;
             z-index: 2;
             background: #CBCACE;
             border-radius: 8px
         }
 
-        .nav.svelte-2398mr.svelte-2398mr {
+        .nav.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
             font-size: 1em;
             align-self: center
         }
 
-        .dropdown.svelte-2398mr a.svelte-2398mr {
+        .dropdown.svelte-124iln0 a.svelte-124iln0.svelte-124iln0 {
             display: block;
             padding: 0.2em 0.8em;
             text-decoration: none;
             color: #333333
+        }
+
+        .toggle-label-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+            display: none;
+            cursor: pointer;
+            margin-right: 10px
+        }
+
+        .items-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+            display: none
+        }
+
+        .dropdown-menu-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f1f1f1
+        }
+
+        .dropdown-menu-mobile.svelte-124iln0 li.svelte-124iln0.svelte-124iln0 {
+            padding: 10px
+        }
+
+        .dropdown-menu-mobile.svelte-124iln0 li.svelte-124iln0 a.svelte-124iln0 {
+            color: #000;
+            text-decoration: none
+        }
+
+        @media screen and (max-width: 768px) {
+            .toggle-label-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+                display: block
+            }
+
+            .items.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+                display: none
+            }
+
+            .items-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+                display: block
+            }
+
+            .dropdown-menu.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+                display: none
+            }
+
+            .dropdown-menu-mobile.svelte-124iln0.svelte-124iln0.svelte-124iln0 {
+                display: block
+            }
+        }
+
+        .section-container.svelte-qodkqc.svelte-qodkqc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .logo.svelte-qodkqc.svelte-qodkqc {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-qodkqc.svelte-qodkqc {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            border: 2px red solid;
+            margin: 0 auto
+        }
+
+        .desktop-nav.svelte-qodkqc nav.svelte-qodkqc {
+            display: flex;
+            gap: 2rem
+        }
+
+        .desktop-nav.svelte-qodkqc nav a.link.svelte-qodkqc {
+            border-color: transparent;
+            transition: border-color 0.1s;
+            font-size: 0.95rem
+        }
+
+        .desktop-nav.svelte-qodkqc nav a.link.svelte-qodkqc:hover {
+            border-bottom: 2px red solid
+        }
+
+        @media(min-width: 800px) {
+            .desktop-nav.svelte-qodkqc.svelte-qodkqc {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-qodkqc.svelte-qodkqc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        .mobile-nav.svelte-qodkqc img.svelte-qodkqc {
+            width: 70%
+        }
+
+        .mobile-nav.svelte-qodkqc .logo.svelte-qodkqc,
+        .mobile-nav.svelte-qodkqc #open.svelte-qodkqc {
+            margin: 0rem 2rem
+        }
+
+        .mobile-nav.svelte-qodkqc #popup a.svelte-qodkqc:hover {
+            border-bottom: 2px red solid
+        }
+
+        @media(min-width: 800px) {
+            .mobile-nav.svelte-qodkqc.svelte-qodkqc {
+                display: none
+            }
+        }
+
+        #popup.svelte-qodkqc.svelte-qodkqc {
+            font-size: 1.25rem;
+            display: grid;
+            gap: 1rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-radius: var(--border-radius);
+            inset: 0.5rem;
+            bottom: initial;
+            padding: 2rem;
+            z-index: 1
+        }
+
+        #popup.svelte-qodkqc button#close.svelte-qodkqc {
+            position: absolute;
+            right: 1rem;
+            top: 1rem
         }
 
         aside.svelte-15xaj3j.svelte-15xaj3j {
@@ -467,23 +687,48 @@
 
     <div class="section" id="section-1c9cee24-9322-4745-8ddd-286b84939094">
         <div class="component">
-            <section class="page-container svelte-2398mr"><a href="/">
-                    <img src="https://i.imgur.com/XbRkfNe.png" class="svelte-2398mr"></a>
-                <div class="items svelte-2398mr">
-                    <div class="dropdown svelte-2398mr"><a href="/" class="nav svelte-2398mr">Services</a>
-                        <ul class="dropdown-menu svelte-2398mr">
-                            <li class="svelte-2398mr"><a href="/rlap" class="svelte-2398mr">Refugee Legal Aid Program</a></li>
-                            <li class="svelte-2398mr"><a href="/ucyd" class="svelte-2398mr">Unaccompanied Children and Youth Department</a></li>
-                            <li class="svelte-2398mr"><a href="/cod" class="svelte-2398mr">Community Outreach Services</a></li>
-                            <li class="svelte-2398mr"><a href="/ps" class="svelte-2398mr">Psychosocial Services Services</a></li>
-                            <li class="svelte-2398mr"><a href="/education" class="svelte-2398mr">Education Services</a></li>
+            <section class="page-container svelte-124iln0"><a href="/">
+                    <img class="logo svelte-124iln0" src="https://i.imgur.com/bMmmP8z.png"></a>
+                <div class="items svelte-124iln0">
+                    <div class="dropdown svelte-124iln0"><a href="/" class="nav svelte-124iln0">Services</a>
+                        <ul class="dropdown-menu svelte-124iln0">
+                            <li class="svelte-124iln0"><a href="/rlap" class="svelte-124iln0">Refugee Legal Aid Program</a></li>
+                            <li class="svelte-124iln0"><a href="/ucyd" class="svelte-124iln0">Unaccompanied Children and Youth Department</a></li>
+                            <li class="svelte-124iln0"><a href="/cod" class="svelte-124iln0">Community Outreach Services</a></li>
+                            <li class="svelte-124iln0"><a href="/ps" class="svelte-124iln0">Psychosocial Services Services</a></li>
+                            <li class="svelte-124iln0"><a href="/education" class="svelte-124iln0">Education Services</a></li>
                         </ul>
                     </div>
-                    <div class="items svelte-2398mr"><a href="/contact" class="nav svelte-2398mr">Contact</a><a href="/donate" class="nav svelte-2398mr">Donate</a><a href="/get-involved" class="nav svelte-2398mr">Get-Involved</a>
-                        <a href="https://www.facebook.com/standrewsrefugeeservices" class="fb svelte-2398mr">Facebook</a>
+                    <div class="items svelte-124iln0"><a href="/contact" class="nav svelte-124iln0">Contact</a><a href="/donate" class="nav svelte-124iln0">Donate</a><a href="/get-involved" class="nav svelte-124iln0">Get-Involved</a>
+                        <a href="https://www.facebook.com/standrewsrefugeeservices" class="fb svelte-124iln0">Facebook</a>
                     </div>
                 </div>
+                <div class="items-mobile svelte-124iln0"><input type="checkbox" id="menu-toggle-mobile">
+                    <label for="menu-toggle-mobile" class="toggle-label-mobile svelte-124iln0"></label>
+                    <ul class="dropdown-menu-mobile svelte-124iln0">
+                        <li class="svelte-124iln0"><a href="/contact" class="nav svelte-124iln0">Contact</a></li>
+                        <li class="svelte-124iln0"><a href="/donate" class="nav svelte-124iln0">Donate</a></li>
+                        <li class="svelte-124iln0"><a href="/get-involved" class="nav svelte-124iln0">Get-Involved</a></li>
+                        <li class="svelte-124iln0"><a href="https://www.facebook.com/standrewsrefugeeservices" class="fb svelte-124iln0">Facebook</a></li>
+                    </ul>
+                </div>
             </section>
+            <label class="switch svelte-124iln0"><input type="checkbox" onchange="function toggleDarkMode() {
+		isDarkMode = !isDarkMode;
+	}" class="svelte-124iln0">
+                <span class="slider round svelte-124iln0"></span></label>
+        </div>
+    </div>
+    <div class="section" id="section-dbf9c0aa-cd83-4a6a-bce7-241477035513">
+        <div class="component">
+            <header class="section-container svelte-qodkqc">
+                <div class="desktop-nav svelte-qodkqc"><a href="/" class="logo svelte-qodkqc"><img src="https://i.imgur.com/XbRkfNe.png" alt=""></a>
+                    <nav class="svelte-qodkqc"><a class="link svelte-qodkqc" href="/">Services</a><a class="link svelte-qodkqc" href="/contact">Contact</a><a class="link svelte-qodkqc" href="/donate">Donate</a><a class="link svelte-qodkqc" href="/get-involved">Get involved</a><a class="link svelte-qodkqc" href="facebook.com">Facebook</a></nav>
+                </div>
+                <div class="mobile-nav svelte-qodkqc"><a href="/" class="logo svelte-qodkqc"><img src="https://i.imgur.com/XbRkfNe.png" alt="" class="svelte-qodkqc"></a>
+                    <button id="open" aria-label="Open mobile navigation" class="svelte-qodkqc"></button>
+                </div>
+            </header>
         </div>
     </div>
     <div class="section" id="section-549f4e83-dcfc-46e7-8c24-47041e8e03f8">
